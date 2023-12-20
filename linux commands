@@ -1,0 +1,23 @@
+1  clear
+    2  pwd
+    3  useradd dummy
+    4  sudo useradd dummy
+    5  cat /etc/passwd
+    6  sudo su
+    7  clear
+    8  sudo usermod -a -G dummy ec2-user
+    9  sudo groupadd group-1
+   10  sudo /etc/group
+   11  sudo cat /etc/group
+   12  sudo usermod -a -G group-1 ec2-user
+   13  sudo cat /etc/group
+   14  touch test.txt
+   15  ls
+   16  cat test.txt
+   17  vi test.txt
+   18  cat test.txt
+   19  vi test.txt
+   20  cat test.txt
+   21  nano test.txt
+   22  cat test.txt
+   23  nano test.
