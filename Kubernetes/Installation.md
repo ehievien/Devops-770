@@ -11,5 +11,6 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 kubectl version -o yaml
 minikube start --driver=docker
+---minikube start --driver=docker --force --cpus 1 (docker deamon socket issues)
 minikube status
 ```
