@@ -14,7 +14,6 @@ minikube start --driver=docker
 ---minikube start --driver=docker --force --cpus 1 (docker deamon socket issues)
 ---minikube start --driver=docker --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus=1
 minikube status
-```
 
 ----install docker
 sudo apt update
@@ -24,3 +23,4 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 apt-cache policy docker-ce
 sudo apt install docker-ce
 sudo systemctl status docker
+```
