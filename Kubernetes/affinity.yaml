@@ -1,0 +1,29 @@
+# topology.kubernetes.io/zone=eu-west-1a
+# topology.kubernetes.io/zone=eu-west-1b
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-affinity-4
+spec:
+  affinity:
+    nodeAffinity:
+      # requiredDuringSchedulingIgnoredDuringExecution:
+      #   nodeSelectorTerms:
+      #   - matchExpressions:
+      #     - key: topology.kubernetes.io/zone
+      #       operator: In
+      #       values:
+      #       - eu-west-1d
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: topology.kubernetes.io/zone
+            operator: In
+            values:
+            - eu-west-1d
+  containers:
+  - image: nginx:latest
+    name: node-affinity
+
