@@ -20,6 +20,8 @@ sudo apt update
 
 sudo apt install kubectl
 
+aws configure
+
 1  # for ARM systems, set ARCH to: `arm64`, `armv6` or `armv7`
     2  ARCH=amd64
     3  PLATFORM=$(uname -s)_$ARCH
