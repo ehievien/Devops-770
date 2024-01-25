@@ -4,4 +4,7 @@
 3. To plan the resources being launched - terraform plan
 4. To apply - terraform apply
 5. To destroy / delete all the resources - terraform destroy
+
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster
 ```
