@@ -16,3 +16,38 @@
    17  cd Terraform
    18  terraform plan
    19  history
+
+
+6  sudo apt update
+    7  sudo apt-get install terraform
+    8  terraform -help
+    9  aws
+   10  sudo apt install awscli
+   11  aws configure
+   12  git clone https://github.com/kushaggarwal/Devops-770.git
+   13  cd Devops-770
+   14  ls
+   15  cd Terraform
+   16  Terraform init
+   17  ls
+   18  terraform init
+   19  ls
+   20  ls -a
+   21  terraform plan
+   22  terraform apply
+   23  terraform destroy
+   24  ls
+   25  cat main.tf
+   26  cd ..
+   27  rm -rf Devops-770
+   28  git clone https://github.com/kushaggarwal/Devops-770.git
+   29  cd Devops-770
+   30  cd terraform
+   31  ls
+   32  cd Terraform
+   33  cat main.tf
+   34  terraform init
+   35  terraform plan
+   36  terraform apply
+   37  cat main.tf
+   38  history
