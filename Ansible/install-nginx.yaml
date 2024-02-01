@@ -1,0 +1,11 @@
+- name: Install nginx on target nodes
+  hosts: all
+  become: true
+  tasks:
+  - name: Update current packges
+    apt:
+      update-cache: yes
+  - name: Install nginx
+    apt:
+      name: nginx
+      state: present
