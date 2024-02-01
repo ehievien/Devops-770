@@ -1,0 +1,55 @@
+   1  python3
+    2  sudo apt install python3-pip
+    3  pip
+    4  sudo apt install python3-pip
+    5  sudo apt update
+    6  sudo apt install python3-pip
+    7  pip3
+    8  sudo pip3 install ansible 
+    9  mkdir ansible
+   10  ls
+   11  cd ansible
+   12  ls
+   13  touch hosts
+   14  vi hosts
+   15  ansible-inventory --list -y -i /home/ubuntu/ansible/hosts
+   16  cd ~/.ssh
+   17  vi ansible_key
+   18  chmod 400 ansible_key
+   19  ansible all -m ping -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   20  ls
+   21  cd ansible
+   22  ls
+   23  vi ansible_key
+   24  cat host
+   25  cd hosts
+   26  clear
+   27  cd _/.ssh
+   28  cd ~/.ssh
+   29  vi ansible_key
+   30  cd ansible
+   31  cd ..
+   32  cd ansible
+   33  ls
+   34  vi hosts
+   35  history
+   36  ansible all -m ping -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   37  vi hosts
+   38  cd ansible
+   39  vi hosts
+   40  history
+   41  ansible all -m ping -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   42  vi hosta
+   43  vi hosts
+   44  ansible all -m ping -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   45  vi hosts
+   46  ansible all -m ping -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   47  vi install-ngnix.yaml
+   48  ansible-playbook install-nginx.yaml --syntax-check
+   49  ansible-playbook install-ngnix.yaml --syntax-check
+   50  ansible-playbook install-ngnix.yaml -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   51  vi git.yaml
+   52  ansible-playbook git.yaml -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   53  vi create-file.yaml
+   54  ansible-playbook create-file.yaml -i /home/ubuntu/ansible/hosts --private-key=~/.ssh/ansible_key
+   55  history
